@@ -21,6 +21,7 @@ export default defineConfig({
 
   use: {
     baseURL: URLS.BASE,
+    testIdAttribute: 'data-test',
     headless: true,
     actionTimeout: 10_000,
     screenshot: 'only-on-failure',

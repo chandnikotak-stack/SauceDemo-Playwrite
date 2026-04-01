@@ -83,10 +83,8 @@ SauceDemo-Playwrite/
 ├── utils/
 │   └── testData.ts                 # Test data, URLs, env config
 ├── .env.example                    # Env variable template
-├── .gitignore
 ├── global-setup.ts                 # One-time login setup
 ├── package.json
 ├── playwright.config.ts            # Playwright configuration
-├── tsconfig.json                   # TypeScript configuration
-└── README.md
+└── tsconfig.json                   # TypeScript configuration
 ```
