@@ -1,0 +1,21 @@
+{
+  "name": "saucedemo-playwright",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript test automation for SauceDemo",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "PWDEBUG=1 playwright test",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.0.0",
+    "dotenv": "^17.3.1",
+    "typescript": "^5.4.0"
+  }
+}
