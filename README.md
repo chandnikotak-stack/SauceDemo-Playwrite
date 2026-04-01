@@ -66,34 +66,27 @@ npm run report
 ## Project Structure
 
 ```
-├── fixtures/          # Custom Playwright fixtures (page object injection)
-│   └── app.fixture.ts
-├── pages/             # Page Object Model classes
-│   ├── BasePage.ts    # Abstract base with shared navigation/wait helpers
-│   ├── LoginPage.ts
-│   ├── InventoryPage.ts
-│   └── CartPage.ts
+SauceDemo-Playwrite/
+├── .github/
+│   └── workflows/
+│       └── playwright.yml          # CI pipeline
+├── fixtures/
+│   └── app.fixture.ts              # Custom Playwright fixtures
+├── pages/
+│   ├── BasePage.ts                 # Abstract base page
+│   ├── CartPage.ts                 # Cart page object
+│   ├── InventoryPage.ts            # Inventory page object
+│   └── LoginPage.ts                # Login page object
 ├── tests/
 │   └── cart/
-│       └── cart.spec.ts
+│       └── cart.spec.ts            # Cart test spec
 ├── utils/
-│   └── testData.ts    # Centralized test data, URLs, and env var config
-├── global-setup.ts    # One-time login → saves storageState for all tests
-├── playwright.config.ts
-└── .env.example
+│   └── testData.ts                 # Test data, URLs, env config
+├── .env.example                    # Env variable template
+├── .gitignore
+├── global-setup.ts                 # One-time login setup
+├── package.json
+├── playwright.config.ts            # Playwright configuration
+├── tsconfig.json                   # TypeScript configuration
+└── README.md
 ```
-├── fixtures/
-│   └── app.fixture.ts            # Custom test fixtures
-├── pages/
-│   ├── BasePage.ts               # Base page object
-│   ├── LoginPage.ts              # Login page actions
-│   ├── InventoryPage.ts          # Inventory page actions
-│   └── CartPage.ts               # Cart page actions
-├── utils/
-│   └── testData.ts               # Test data and constants
-└── tests/
-    └── cart/
-        └── cart.spec.ts           # Cart test cases
-```
-
-
